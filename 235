@@ -1,0 +1,28 @@
+```mermaid
+flowchart TD
+    A[危机转化<br/>Crisis Transformation] --> B[危机转化模型<br/>Crisis Transformation Model]
+    
+    subgraph Subgraph1 [碳锁定模型<br/>Carbon Lock-in Model]
+        B --> C[真实碳锁定值<br/>Real Carbon Lock-in Value]
+        C --> D[基础碳锁定值<br/>Basic Carbon Lock-in Value]
+        D --> E[营运车辆碳锁定值<br/>Operating Vehicle Lock-in]
+        D --> F[家用小汽车碳锁定值<br/>Private Car Lock-in]
+        D --> G[道路设施碳锁定量<br/>Road Facilities Lock-in]
+        
+        C --> H[碳锁定放大系数<br/>Carbon Lock-in Amplification Coefficient]
+        H --> I[技术锁定度<br/>Technical Lock-in Degree]
+        H --> J[制度依赖度<br/>Institutional Dependence]
+        H --> K[解锁能力<br/>Unlocking Capacity]
+    end
+    
+    subgraph Subgraph2 [边际减排成本模型<br/>Marginal Abatement Cost Model]
+        B --> L[边际减排成本模型<br/>Marginal Abatement Cost Model]
+        L --> M[平均减排成本<br/>Average Abatement Cost]
+    end
+    
+    B --> N[危机转化效率<br/>Crisis Transformation Efficiency]
+    
+    style A fill:#e1f5fe
+    style N fill:#c8e6c9
+    style Subgraph1 fill:#f3e5f5
+    style Subgraph2 fill:#fff3e0
